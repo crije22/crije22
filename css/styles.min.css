@@ -29,7 +29,7 @@ p strong{font-size:20px;}
 .small-box{max-width: 580px; margin: auto; height: 100%;}
 /*Menu*/
 .social-1,.social-2,.social-3{width:28px;height:16px;background-repeat:no-repeat; margin-bottom:5px;background-position:center center;}
-.social-1{background-image:url(../../images/assets/facebook_icon.png);}
+.social-1{background-image:url(../images/assets/facebook_icon.png);}
 .social-2{background-image:url(../images/assets/money.png);}
 .social-3{background-image:url(../images/assets/logo_gofyndme.png);}
 .social-media{position:fixed;right:10%;top:20%;}
