@@ -1,43 +1,68 @@
 /* HTML */
-section{height: 100vh;}
-footer{color: #fff; padding-top: 15px; padding-bottom: 15px; background: #282828;}
-ul{list-style:none;}
-h1{margin: 0; font-family: 'Poppins', sans-serif; font-size: 45px; color: #333; text-transform: uppercase; font-weight: 700;}
-h2{margin: 0;font-family: 'Poppins';font-weight:900;text-transform:uppercase;font-size:40px;font-style: italic;}
-p{margin: 0;font-family:'raleway'; margin-bottom: 23px;font-size:15px;}
-a{font-family:'Poppins';font-weight:500;text-decoration:underline!important;}
-p {font-size:15px;}
-p strong{font-size:20px;}
-.btn{text-decoration:none!important;}
-.btn-success{background-color:#cc9933;padding:12px;padding-left:30px;padding-right:30px;border:0;color:white!important;}
-.btn-success:hover{background:#bf8240;border-color:#bf8240;}
-.btn-info{background-color:transparent;padding:12px;padding-left:30px;padding-right:30px;border:2px solid #282828!important;color:black!important;}
-.btn-info:hover{background:#282828;border:2px solid #282828;color:white!important;}
-.btn-warning{background-color:transparent !important;border:2px solid white;color:white!important;padding:12px;padding-left:30px;padding-right:30px;text-decoration}
-.btn-warning:hover{background-color:#282828 !important;border:2px solid #282828!important;color:white!important;}
-/* BOOTSTRAP */
-.row{margin: 0; height: 100%;}
-.container-fluid{height:100%; margin:auto;max-width:1310px;}
-.flex{display:flex; height: 100%;}
-.flex-container{display: inline-block; margin: auto}
-/*BACKGROUND PAGINA*/
-.cindy-dolphing{background-image:url(../images/assets/seccion2.jpg);background-size:cover;background-position:left bottom;background-repeat:no-repeat;}
-.cindy-hospital{background-image:url(../images/assets/bkg_seccion_3.jpg);background-size:cover;background-position:right top;background-repeat:no-repeat;}
-.cindy-registros{background-image:url(../images/assets/bkg_4.jpg);background-size:cover;background-repeat:no-repeat;}
-.cindy-dream{background-image:url(../images/assets/bkg_5.jpg);background-size:cover;background-position:left bottom;background-repeat:no-repeat;}
-.cindy-goal{background-image:url(../images/assets/bkg_footer.jpg);background-size:cover;background-repeat:no-repeat;background-position: 68% 100%;}
-.small-box{max-width: 580px; margin: auto; height: 100%;}
-/*Menu*/
-.social-1,.social-2,.social-3{width:28px;height:16px;background-repeat:no-repeat; margin-bottom:5px;background-position:center center;}
-.social-1{background-image:url(../images/assets/facebook_icon.png);}
-.social-2{background-image:url(../images/assets/money.png);}
-.social-3{background-image:url(../images/assets/logo_gofyndme.png);}
-.social-media{position:fixed;right:10%;top:20%;}
-/*.main-nav ul li a{text-decoration:none!important;font-family:'raleway';font-size:14px;margin-bottom:10px;}*/
-.main-nav ul li a{text-decoration:none!important;font-family:'raleway';font-size:14px;color:#282828!important;margin-bottom:8px;background-color:transparent;background-size:cover;padding-left:10px;padding-right:10px;border-radius:3px;height:30px;display:inline-flex;text-align:center;}
-.main-nav ul li a:hover{text-decoration:none!important;font-family:'raleway';font-size:14px;color:#ffffff!important;margin-bottom:8px;background-color:#282828;background-size:cover;padding-left:10px;padding-right:10px;border-radius:3px;height:30px;display:inline-flex;text-align:center;}
-.main-nav{position:fixed;right:10%;text-align:right;top:50%;transform:traslateY(-50%);}
-.cindy-hero{background-image:url(../images/assets/Blancoynegro_cindy.jpg);background-position:left bottom;background-repeat:no-repeat;}
-.Idioma{position:absolute; right:calc(10% - 18px);bottom:5%;transform:rotateZ(90deg);font-family:'poppins';font-weight:900;}
+a{text-decoration: underline; display: inline-block; margin-bottom: 30px;}
+h1{font-family: 'Poppins', sans-serif;  font-size: 45px; color: #333; text-transform: uppercase; font-weight: 700;}
+h2{font-family: 'Poppins'; font-weight: 900; text-transform: uppercase; font-size: 40px; font-style: italic;}
+p{font-family: 'raleway'; margin-bottom: 23px; font-size: 15px;}
+header{position: fixed; width: 220px; right: 0; top: 0; height: 100%; padding: 15px; background: rgba(255,255,255,.5); z-index: 5;}
+header ul{margin-bottom: 15px;}
+header #mainNav a{text-decoration: none !important; font-family: 'raleway'; font-size: 14px; color: #282828 !important;  padding: 8px; text-align: right; padding-left: 15px; padding-right: 15px; margin: 0 !important; display: inline;}
+header #mainNav li{display: block; width: 100%; text-align: right; padding: 5px; padding-right: 15px;}
+header #mainNav a:hover{background: #282828; color: #fff !important; border-radius: 5px;}
+header #mainNav .active a{background: #282828; color: #fff !important; border-radius: 5px;}
+section{min-height: 100vh; overflow: hidden}
+footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; padding-bottom: 15px; z-index: 9999;}
+
+/* BOOTSTRAP RESETS */
+.row{margin: 0}
+
+/* SECTIONS GENERAL RULZ */
+.page-container{max-width: 580px; margin: 0 auto; height: 100vh;}
+.flex{display: flex; height: 100%;}
+.flex-container{display: inline-block; margin: auto;}
+.hero{max-width: 750px !important;}
+.hero img{vertical-align: bottom;}
+
+/* TEXT COLORS */
+.text-white *{color: #fff !important;}
+.text-black *{color: #282828 !important;}
+
+/* BUTTONS */
+.text-white .btn{background-color: transparent; padding: 12px; padding-left: 30px; padding-right: 30px; border: 2px solid #fff !important; color: #fff !important; text-decoration: none !important; font-weight: 400;}
+.text-white .btn:hover{background-color: #282828; border-color: #282828 !important; color: #fff !important;}
+.text-black .btn{background-color: transparent; padding: 12px; padding-left: 30px; padding-right: 30px; border: 2px solid #282828 !important; color: #282828 !important; text-decoration: none !important; font-weight: 400;}
+.text-black .btn:hover{background-color: #282828; border-color: #282828 !important; color: #fff !important;}
+.hero .btn{background-color: #cc9933; border-color: #cc9933 !important; padding: 12px; padding-left: 30px; padding-right: 30px; color: #fff !important; text-decoration: none; font-weight: 400;}
+.hero .btn:hover{background-color: #a97715; border-color: #a97715 !important;}
+
+/* SOCIAL */
+.social{margin-top: 60px;}
+.social a{margin-bottom: 5px !important; text-align: right; display: block; padding-left: 30px; padding-right: 30px;}
+.social a:hover{opacity: .5;}
+
+/* LANGUAGE */
+.language{transform: rotate(90deg); margin-top: 135px; margin-right: -80px;}
+.language a{font-family: 'poppins'; font-weight: 900; color: #282828; text-decoration: none;}
+
+/* HELP ME */
+.yosoy-bg{background: url(/images/assets/bg-yosoy.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+.cancer-bg{background: url(/images/assets/bg-cancer.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+.diagnostig-bg{background: url(/images/assets/bg-diagnostic.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+.dream-bg{background: url(/images/assets/dream-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+.help-bg{background: url(/images/assets/help-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+
+/* MENU */
+
+
+@media(max-width: 1060px){
+    header{top: 0; left: 0; right: 0; width: 100%; max-width: 100%; padding: 0; height: auto; padding-top: 5px; padding-bottom: 5px;}
+    header .flex{display: block; height: auto;}
+    header .flex-container{width: 100%;}
+    header ul{display: inline-block; margin: 0 !important;}
+    header ul li{display: inline !important;}
+    header ul li a{display: inline-block !important; padding-left: 5px !important; padding-right: 5px !important;}
+    header .language{transform: none;}
+    .page-container{margin: auto auto auto 60px;}
+}
+
 
 
