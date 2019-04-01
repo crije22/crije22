@@ -35,24 +35,54 @@ footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; 
 .hero .btn:hover{background-color: #a97715; border-color: #a97715 !important;}
 
 /* SOCIAL */
-.social{margin-top: 60px;}
 .social a{margin-bottom: 5px !important; text-align: right; display: block; padding-left: 30px; padding-right: 30px;}
 .social a:hover{opacity: .5;}
 
 /* LANGUAGE */
-.language{transform: rotate(90deg); margin-top: 135px; margin-right: -80px;}
+.language{transform: rotate(90deg); position: absolute; right: -50px;}
 .language a{font-family: 'poppins'; font-weight: 900; color: #282828; text-decoration: none;}
 
 /* HELP ME */
-.yosoy-bg{background: url(../images/assets/bg-yosoy.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-.cancer-bg{background: url(../images/assets/bg-cancer.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
-.diagnostig-bg{background: url(../images/assets/bg-diagnostic.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-.dream-bg{background: url(../images/assets/dream-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-.help-bg{background: url(../images/assets/help-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+.yosoy-bg{background: url(/images/assets/bg-yosoy.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+.cancer-bg{background: url(/images/assets/bg-cancer.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+.diagnostig-bg{background: url(/images/assets/bg-diagnostic.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+.dream-bg{background: url(/images/assets/dream-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+.help-bg{background: url(/images/assets/help-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
 
 /* MENU */
+header label, header input{display: none;}
 
+@media(max-width: 1200px){
+    .page-container{margin: 0 0 0 60px !important;}
+}
 
+@media(max-width: 1100px){
+
+    header{padding: 0; left: 0; width: 100%; height: auto;}
+    header .flex {display: inherit; height: inherit;}
+    header .flex-container {display: inherit; margin: inherit;}
+    .social{display: inline;}
+    .social li{display: inline !important;}
+    .social li a{display: inline; padding-left: 15px; padding-right: 15px;}
+    .language{transform: inherit; position: inherit; right: inherit;}
+
+    header .menu {clear: both; max-height: 0; transition: max-height .2s ease-out; display: none;}
+    header .menu-icon {cursor: pointer; display: inline-block; float: right; padding: 28px 20px;position: relative; user-select: none;}
+    header .menu-icon .navicon {background: #333; display: block; height: 2px; position: relative; transition: background .2s ease-out; width: 18px;}
+    header .menu-icon .navicon:before,header .menu-icon .navicon:after{background: #333; content: ''; display: block; height: 100%; position: absolute; transition: all .2s ease-out; width: 100%;}
+    header .menu-icon .navicon:before {top: 5px;}
+    header .menu-icon .navicon:after {top: -0px;}
+    header .menu-btn {display: none;}
+    header .menu-btn:checked ~ .menu {max-height: 240px; display: block;}
+    header .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+    header .menu-btn:checked ~ .menu-icon .navicon:before{transform: rotate(-45deg);}
+    header .menu-btn:checked ~ .menu-icon .navicon:after{transform: rotate(45deg);}
+    header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {top: 0;}
+
+    
+}
+
+/*
 @media(max-width: 1060px){
     header{top: 0; left: 0; right: 0; width: 100%; max-width: 100%; padding: 0; height: auto; padding-top: 5px; padding-bottom: 5px;}
     header .flex{display: block; height: auto;}
@@ -63,6 +93,7 @@ footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; 
     header .language{transform: none;}
     .page-container{margin: auto auto auto 60px;}
 }
+*/
 
 
 
