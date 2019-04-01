@@ -44,11 +44,11 @@ footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; 
 .language a{font-family: 'poppins'; font-weight: 900; color: #282828; text-decoration: none;}
 
 /* HELP ME */
-.yosoy-bg{background: url(images/assets/bg-yosoy.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-.cancer-bg{background: url(images/assets/bg-cancer.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
-.diagnostig-bg{background: url(images/assets/bg-diagnostic.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-.dream-bg{background: url(images/assets/dream-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-.help-bg{background: url(images/assets/help-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+.yosoy-bg{background: url(../images/assets/bg-yosoy.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+.cancer-bg{background: url(../images/assets/bg-cancer.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+.diagnostig-bg{background: url(../images/assets/bg-diagnostic.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+.dream-bg{background: url(../images/assets/dream-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+.help-bg{background: url(../images/assets/help-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
 
 /* MENU */
 
