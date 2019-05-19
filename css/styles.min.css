@@ -1,6 +1,6 @@
 /* HTML */
 a{text-decoration: underline; display: inline-block; margin-bottom: 30px;}
-h1{font-family: 'Poppins', sans-serif;  font-size: 45px; color: #333; text-transform: uppercase; font-weight: 700;}
+h1{font-family: 'Poppins', sans-serif;  font-size: 45px; color: #333; text-transform: uppercase; font-weight: 900;font-style: italic;}
 h2{font-family: 'Poppins'; font-weight: 900; text-transform: uppercase; font-size: 40px; font-style: italic;}
 p{font-family: 'raleway'; margin-bottom: 23px; font-size: 15px;}
 header{position: fixed; width: 220px; right: 0; top: 0; height: 100%; padding: 15px; background: rgba(255,255,255,.5); z-index: 5;}
@@ -10,18 +10,20 @@ header #mainNav li{display: block; width: 100%; text-align: right; padding: 5px;
 header #mainNav a:hover{background: #282828; color: #fff !important; border-radius: 5px;}
 header #mainNav .active a{background: #282828; color: #fff !important; border-radius: 5px;}
 section{min-height: 100vh; overflow: hidden}
-footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; padding-bottom: 15px; z-index: 9999;}
+footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; padding-bottom: 15px; z-index: 9999;font-size: 11px;font-family: 'raleway';letter-spacing: 2px;}
 
 /* BOOTSTRAP RESETS */
 .row{margin: 0}
-
+.col-50{width: 50%;}
 /* SECTIONS GENERAL RULZ */
 .page-container{max-width: 580px; margin: 0 auto; height: 100vh;}
 .flex{display: flex; height: 100%;}
 .flex-container{display: inline-block; margin: auto;}
 .hero{max-width: 750px !important;}
 .hero img{vertical-align: bottom;}
-
+.cont-descarga{display: flex;}
+.cont-descarga .pl-0:hover a{color:#ed9343 !important;}
+.cont-descarga div{width: 100%;}
 /* TEXT COLORS */
 .text-white *{color: #fff !important;}
 .text-black *{color: #282828 !important;}
@@ -36,13 +38,14 @@ footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; 
 
 /* SOCIAL */
 .social a{margin-bottom: 5px !important; text-align: right; display: block; padding-left: 30px; padding-right: 30px;}
-.social a:hover{opacity: .5;}
-
+.bg1-bn,.bg2-bn,.bg3-bn{ position: absolute;}
+.icon1:hover .bg1-bn,.icon2:hover .bg2-bn,.icon3:hover .bg3-bn{visibility: hidden;}
 /* LANGUAGE */
 .language{transform: rotate(90deg); position: absolute; right: -50px;}
 .language a{font-family: 'poppins'; font-weight: 900; color: #282828; text-decoration: none;}
 
 /* HELP ME */
+/*.hola-bg{background: url(../images/assets/Blancoynegro_cindy.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}*/
 .yosoy-bg{background: url(../images/assets/bg-yosoy.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
 .cancer-bg{background: url(../images/assets/bg-cancer.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
 .diagnostig-bg{background: url(../images/assets/bg-diagnostic.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
@@ -52,42 +55,63 @@ footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; 
 /* MENU */
 header label, header input{display: none;}
 
-@media(max-width: 1200px){
-    .page-container{margin: 0 0 0 60px !important;}
-}
+/* SECCION HOLA */
+.cont-hola{position: relative;display: flex}
+.cont-hola{bottom: 0;width: 100%;padding:4em 18px;left: 0;}
 
-@media(max-width: 1100px){
 
-    header{padding: 0; left: 0; width: 100%; height: auto;}
+@media(max-width: 980px){
+
+    header{padding: 0; left: 0; width: 100%; height: 45px;background: rgba(255,255,255,.5);}
     header .flex {display: inherit; height: inherit;}
-    header .flex-container {display: inherit; margin: inherit;}
-    .social{display: inline;}
+    header .flex-container {display: flex;justify-content: center;align-items: center;margin: inherit;float: right;height: 45px;}
+    .social{display: contents;}
     .social li{display: inline !important;}
-    .social li a{display: inline; padding-left: 15px; padding-right: 15px;}
+    .social li a{display: inline; padding-left: 4px; padding-right: 4px;}
     .language{transform: inherit; position: inherit; right: inherit;}
-
+    .cont-descarga a{font-size: 12px;}
+    .col-50{width: 100%;z-index: 2;}
+    .cont-hola{padding: 0 3em}
+    .cont-hola img,.cont-hola .col-md-6{display: none !important;}
     header .menu {clear: both; max-height: 0; transition: max-height .2s ease-out; display: none;}
-    header .menu-icon {cursor: pointer; display: inline-block; float: right; padding: 28px 20px;position: relative; user-select: none;}
-    header .menu-icon .navicon {background: #333; display: block; height: 2px; position: relative; transition: background .2s ease-out; width: 18px;}
+    header .menu-icon {top: 3px;cursor: pointer; display: inline-block; float: right; padding: 28px 20px;position: relative; user-select: none;}
+    header .menu-icon .navicon {background: #333; display: block; height: 2.5px; position: relative; transition: background .2s ease-out; width: 20px;box-shadow: 0 -5px 0 #333;}
     header .menu-icon .navicon:before,header .menu-icon .navicon:after{background: #333; content: ''; display: block; height: 100%; position: absolute; transition: all .2s ease-out; width: 100%;}
     header .menu-icon .navicon:before {top: 5px;}
     header .menu-icon .navicon:after {top: -0px;}
     header .menu-btn {display: none;}
-    header .menu-btn:checked ~ .menu {max-height: 240px; display: block;}
+    header .menu-btn:checked ~ .menu {display: inline-block;position: fixed;top: 45px;left: 0;width: 100%;background: rgba(255,255,255,.5);height: 100vh;max-height: 100%;}
+    header .menu-btn:checked ~ .menu-icon span{box-shadow: none;}
     header .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
-    header .menu-btn:checked ~ .menu-icon .navicon:before{transform: rotate(-45deg);}
-    header .menu-btn:checked ~ .menu-icon .navicon:after{transform: rotate(45deg);}
+    header .menu-btn:checked ~ .menu-icon .navicon:before{transform: rotate(-45deg);background: #ed9343}
+    header .menu-btn:checked ~ .menu-icon .navicon:after{transform: rotate(45deg);background: #ed9343}
+    h1{font-size: 35px;}
+    h2{font-size: 30px;}
+    .pd-3{padding:0 3em;}
+    .hero .btn{padding-left: 10px;padding-right: 10px;}
+    .p-desk{display: none;}
+    .p-mob{display: inline-block !important;}
+    .img-tablet{display: inline-block !important;}
     header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {top: 0;}
-
-    
+    .hola-bg{background: url(../images/assets/mobile/pic_1.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .yosoy-bg{background: url(../images/assets/mobile/pic_2.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .cancer-bg{background: url(../images/assets/mobile/pic_3.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+    .diagnostig-bg{background: url(../images/assets/mobile/pic_4.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .dream-bg{background: url(../images/assets/mobile/pic_5.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .help-bg{background: url(../images/assets/mobile/pic_6.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
 }
-@media (max-width: 767.98px) { 
-.yosoy-bg{background: url(../images/assets/mobile/pic_2.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-.cancer-bg{background: url(../images/assets/mobile/pic_3.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
-.diagnostig-bg{background: url(../images/assets/mobile/pic_4.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-.dream-bg{background: url(../images/assets/mobile/pic_5.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-.help-bg{background: url(../images/assets/mobile/pic_6.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
 
+@media(max-width: 780px){
+    .cont-hola .img-tablet,.cont-hola .col-md-6{display: inline-block !important;visibility: visible !important;}
+    .hola-bg{background: none}
+    .cont-hola .img-tablet{transform: scale(2.4);}
+    h1 {font-size: 45px;}
+}
+@media(max-width: 480px){
+    .hola-bg{background: url(../images/assets/mobile/pic_1.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .cont-hola img,.cont-hola .col-md-6{display: none !important;}
+    .cont-hola{position: absolute;}
+    h1 {font-size: 35px;}
 }
 /*
 @media(max-width: 1060px){
@@ -103,4 +127,4 @@ header label, header input{display: none;}
 */
 
 
-
+/*estilos css en dispositivos */
