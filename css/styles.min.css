@@ -152,7 +152,7 @@ header label, header input{display: none;}
     margin-top: 15%;
 }
 }
-@media only screen and (min-width :1900px) {
+@media only screen and (min-width :1800px) {
   h1{
     font-size: 55px;
     margin-top: -41%;
