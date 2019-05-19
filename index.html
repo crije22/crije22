@@ -20,12 +20,12 @@
     </head>
     <body>
         <header>
-            <div class="flex">
+            <div class="flex nav-movile">
                 <div class="flex-container">
                     <ul class="list-unstyled social">
-                        <li><a href="#"><img src="images/assets/facebook_icon.png"></a></li>
-                        <li><a href="#"><img src="images/assets/dolar_icon.png"></a></li>
-                        <li><a href="#"><img src="images/assets/gofyndme_icon.png"></a></li>
+                        <li><a href="#" class="icon1"><img src="images/assets/facebook_icon.png" class="bg1-bn"><img src="images/assets/facebook_icon_cl.png" class="bg-cl" ></a></li>
+                        <li><a href="#" class="icon2"><img src="images/assets/dolar_icon.png" class="bg2-bn"><img src="images/assets/dolar_icon_cl.png" class="bg-cl"></a></li>
+                        <li><a href="#" class="icon3"><img src="images/assets/gofyndme_icon.png" class="bg3-bn"><img src="images/assets/gofyndme_icon_cl.png" class="bg-cl"></a></li>
                     </ul>
 
                     <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -41,21 +41,25 @@
                         <li class="language"><a href="#">English</a></li>
                     </ul>
                 </div>
-            </div>            
+            </div>               
         </header>
 
-        <section>
+        <section class="hola-bg">
             <div id="1" class="page-container hero text-black">
                 <div class="flex">
                     <div class="flex-container">
                         <div class="row">
-                            <div class="col-sm-6">
-                                <img class="img-fluid mx-auto d-block" src="images/assets/cindy.jpg">
+                            <div class="cont-hola">
+                            <div class="col-md-6 col-sm-12">
+                                <img class="img-fluid mx-auto d-block img-desk" src="images/assets/cindy.jpg">
+                                <img class="img-fluid mx-auto d-block img-tablet" src="images/assets/cindy-tablet.jpg" style="visibility: hidden;">
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-50">   
                                 <h1>HOLA, MI NOMBRE ES CINDY VERA</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p class="p-desk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                              
                                 <a class="btn" href="#">¿Me Apoyas con esta Operación?</a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -66,7 +70,7 @@
         <section class="yosoy-bg">
             <div id="2" class="page-container text-white">
                 <div class="flex">
-                    <div class="flex-container">
+                    <div class="flex-container pd-3">
                         <h2>¿QUIÉN SOY YO?</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
@@ -77,10 +81,9 @@
         <section class="cancer-bg">
             <div id="3" class="page-container text-black">
                 <div class="flex">
-                    <div class="flex-container">
+                    <div class="flex-container pd-3">
                         <h2>TENGO CANCER</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a class="btn" href="#">¿Me Apoyas con esta Operación?</a>
                     </div>
                 </div>
             </div>
@@ -89,21 +92,20 @@
         <section class="diagnostig-bg">
             <div id="4" class="page-container text-white">
                 <div class="flex">
-                    <div class="flex-container">
+                    <div class="flex-container pd-3">
                         <h2>MIS DIÁGNOSTICOS</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <div class="row">
-                            <div class="col-sm-4 pl-0">
+                        <div class="cont-descarga">
+                            <div class="pl-0">
                                 <a href="#">Descarga Aquí</a>
                             </div>
-                            <div class="col-sm-4 pl-0">
+                            <div class="pl-0">
                                 <a href="#">Descarga Aquí</a>
                             </div>
-                            <div class="col-sm-4 pl-0">
+                            <div class="pl-0">
                                 <a href="#">Descarga Aquí</a>
                             </div>
                         </div>
-                        <a class="btn" href="">¿Me Apoyas con esta Operación?</a>
                     </div>
                 </div>
             </div>
@@ -112,19 +114,18 @@
         <section class="dream-bg">
             <div id="5" class="page-container text-black">
                 <div class="flex">
-                    <div class="flex-container">
+                    <div class="flex-container pd-3">
                         <h2>MI SUEÑO</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                        <a class="btn" href="#">¿Me Apoyas con esta Operación?</a>
                     </div>
                 </div>
             </div>
         </section>
         
         <section class="help-bg">
-            <div id="6" class="page-container text-white">
+            <div id="6" class="page-container text-white hero">
                 <div class="flex">
-                    <div class="flex-container">
+                    <div class="flex-container pd-3">
                         <h2>AYÚDAME A LOGRARLO</h2>
                         <p><strong>Número de cuenta para donaciones por medio de deposito bancario.</strong></p>
                         <p>Fulana Mengana sanchez</p>
