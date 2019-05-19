@@ -93,12 +93,12 @@ header label, header input{display: none;}
     .p-mob{display: inline-block !important;}
     .img-tablet{display: inline-block !important;}
     header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {top: 0;}
-    .hola-bg{background: url(../images/assets/mobile/pic_1.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-    .yosoy-bg{background: url(../images/assets/mobile/pic_2.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-    .cancer-bg{background: url(../images/assets/mobile/pic_3.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
-    .diagnostig-bg{background: url(../images/assets/mobile/pic_4.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-    .dream-bg{background: url(../images/assets/mobile/pic_5.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
-    .help-bg{background: url(../images/assets/mobile/pic_6.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+    .hola-bg{background: url(../images/assets/tablets/01.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .yosoy-bg{background: url(../images/assets/tablets/1.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .cancer-bg{background: url(../images/assets/tablets/2.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+    .diagnostig-bg{background: url(../images/assets/tablets/3.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .dream-bg{background: url(../images/assets/tablets/5.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .help-bg{background: url(../images/assets/tablets/6.jpg); background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
 }
 
 @media(max-width: 780px){
@@ -108,7 +108,12 @@ header label, header input{display: none;}
     h1 {font-size: 45px;}
 }
 @media(max-width: 480px){
-    .hola-bg{background: url(../images/assets/mobile/pic_1.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .hola-bg{background: url(../images/assets/mobile/pic_1.jpg) !important; background-repeat: no-repeat !important; background-size: cover !important; background-position: left center !important; background-attachment: fixed !important;}
+    .yosoy-bg{background: url(../images/assets/mobile/pic_2.jpg)!important; background-repeat: no-repeat !important; background-size: cover !important; background-position: left center !important; background-attachment: fixed !important;}
+    .cancer-bg{background: url(../images/assets/mobile/pic_3.jpg) !important; background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
+    .diagnostig-bg{background: url(../images/assets/mobile/pic_4.jpg)!important; background-repeat: no-repeat!important; background-size: cover; background-position: left center; background-attachment: fixed;}
+    .dream-bg{background: url(../images/assets/mobile/pic_5.jpg) !important; background-repeat: no-repeat !important; background-size: cover !important; background-position: left center !important; background-attachment: fixed !important;}
+    .help-bg{background: url(../images/assets/mobile/pic_6.jpg); background-repeat: no-repeat !important; background-size: cover !important; background-position: right center !important; background-attachment: fixed !important;}
     .cont-hola img,.cont-hola .col-md-6{display: none !important;}
     .cont-hola{position: absolute;}
     h1 {font-size: 35px;}
