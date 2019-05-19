@@ -148,24 +148,30 @@ header label, header input{display: none;}
     transform: scale(3.1);
     margin-left: -144% !important;
   }
-  .hero .btn:hover {
-    background-color: #a97715;
-    border-color: #a97715 !important;
+  .hero .btn {
     margin-top: 15%;
 }
 }
-/*
-@media(max-width: 1060px){
-    header{top: 0; left: 0; right: 0; width: 100%; max-width: 100%; padding: 0; height: auto; padding-top: 5px; padding-bottom: 5px;}
-    header .flex{display: block; height: auto;}
-    header .flex-container{width: 100%;}
-    header ul{display: inline-block; margin: 0 !important;}
-    header ul li{display: inline !important;}
-    header ul li a{display: inline-block !important; padding-left: 5px !important; padding-right: 5px !important;}
-    header .language{transform: none;}
-    .page-container{margin: auto auto auto 60px;}
+@media only screen and (min-width :1900px) {
+  h1{
+    font-size: 55px;
+    margin-top: -41%;
+  }
+  p{
+    font-size: 16px;
+    text-align: justify;
+  }
+    .hero .btn {
+    margin-top: 5%;
 }
-*/
+.hero img {
+  
+    margin-left: -99%!important;
+    margin-bottom: -71%;
+    transform: scale(2.0);
+}
+}
+
 
 
 /*estilos css en dispositivos */
