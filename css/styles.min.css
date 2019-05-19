@@ -20,7 +20,7 @@ footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; 
 .flex{display: flex; height: 100%;}
 .flex-container{display: inline-block; margin: auto;}
 .hero{max-width: 750px !important;}
-.hero img{vertical-align: bottom;}
+.hero img{vertical-align: bottom;margin-top: 36%;}
 .cont-descarga{display: flex;}
 .cont-descarga .pl-0:hover a{color:#ed9343 !important;}
 .cont-descarga div{width: 100%;}
