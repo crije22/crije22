@@ -108,12 +108,12 @@ header label, header input{display: none;}
     h1 {font-size: 45px;}
 }
 @media(max-width: 480px){
-    .hola-bg{background: url(../images/assets/mobile/pic_1.jpg) !important; background-repeat: no-repeat !important; background-size: cover !important; background-position: left center !important; background-attachment: fixed !important;}
-    .yosoy-bg{background: url(../images/assets/mobile/pic_2.jpg)!important; background-repeat: no-repeat !important; background-size: cover !important; background-position: left center !important; background-attachment: fixed !important;}
-    .cancer-bg{background: url(../images/assets/mobile/pic_3.jpg) !important; background-repeat: no-repeat; background-size: cover; background-position: right center; background-attachment: fixed;}
-    .diagnostig-bg{background: url(../images/assets/mobile/pic_4.jpg)!important; background-repeat: no-repeat!important; background-size: cover; background-position: left center; background-attachment: fixed;}
-    .dream-bg{background: url(../images/assets/mobile/pic_5.jpg) !important; background-repeat: no-repeat !important; background-size: cover !important; background-position: left center !important; background-attachment: fixed !important;}
-    .help-bg{background: url(../images/assets/mobile/pic_6.jpg); background-repeat: no-repeat !important; background-size: cover !important; background-position: right center !important; background-attachment: fixed !important;}
+    .hola-bg{background: url(../images/assets/mobile/pic_1.jpg) !important; background-repeat: no-repeat !important; background-size: cover !important;}
+    .yosoy-bg{background: url(../images/assets/mobile/pic_2.jpg)!important; background-repeat: no-repeat !important; background-size: cover !important;}
+    .cancer-bg{background: url(../images/assets/mobile/pic_3.jpg) !important; background-repeat: no-repeat; background-size: cover !important;}
+    .diagnostig-bg{background: url(../images/assets/mobile/pic_4.jpg)!important; background-repeat: no-repeat!important; background-size: cover !important;}
+    .dream-bg{background: url(../images/assets/mobile/pic_5.jpg) !important; background-repeat: no-repeat !important; background-size: cover !important; }
+    .help-bg{background: url(../images/assets/mobile/pic_6.jpg); background-repeat: no-repeat !important; background-size: cover !important;}
     .cont-hola img,.cont-hola .col-md-6{display: none !important;}
     .cont-hola{position: absolute;}
     h1 {font-size: 35px;}
