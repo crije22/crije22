@@ -236,6 +236,11 @@ header label, header input{display: none;}
     margin-top: 15%;
 }
 }
-
+@media only screen and (min-device-width :1366px) and ( max-height: 768px )
+{
+    .hero img {
+        margin-top: 45%;
+    }
+}
 
 /*estilos css en dispositivos */
