@@ -1,8 +1,8 @@
 /* HTML */
 a{text-decoration: underline; display: inline-block; margin-bottom: 30px;}
 h1{font-family: 'Poppins', sans-serif;  font-size: 45px; color: #333; text-transform: uppercase; font-weight: 900;font-style: italic;}
-h2{font-family: 'Poppins'; font-weight: 900; text-transform: uppercase; font-size: 40px; font-style: italic;}
-p{font-family: 'raleway'; margin-bottom: 23px; font-size: 15px;}
+h2{font-family: 'Poppins'; font-weight: 900; text-transform: uppercase; font-size: 40px; font-style: italic;margin-bottom: 6%; }
+p{font-family: 'raleway'; margin-bottom: 23px; font-size: 15px;line-height: 2;}
 header{position: fixed; width: 220px; right: 0; top: 0; height: 100%; padding: 15px; background: rgba(255,255,255,.5); z-index: 5;}
 header ul{margin-bottom: 15px;}
 header #mainNav a{text-decoration: none !important; font-family: 'raleway'; font-size: 14px; color: #282828 !important;  padding: 8px; text-align: right; padding-left: 15px; padding-right: 15px; margin: 0 !important; display: inline;}
@@ -33,7 +33,7 @@ footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; 
 .text-white .btn:hover{background-color: #282828; border-color: #282828 !important; color: #fff !important;}
 .text-black .btn{background-color: transparent; padding: 12px; padding-left: 30px; padding-right: 30px; border: 2px solid #282828 !important; color: #282828 !important; text-decoration: none !important; font-weight: 400;}
 .text-black .btn:hover{background-color: #282828; border-color: #282828 !important; color: #fff !important;}
-.hero .btn{background-color: #cc9933; border-color: #cc9933 !important; padding: 12px; padding-left: 30px; padding-right: 30px; color: #fff !important; text-decoration: none; font-weight: 400;}
+.hero .btn{background-color: #cc9933; border-color: #cc9933 !important;margin-top: 12%;padding: 12px; padding-left: 30px; padding-right: 30px; color: #fff !important; text-decoration: none; font-weight: 400;}
 .hero .btn:hover{background-color: #a97715; border-color: #a97715 !important;}
 
 /* SOCIAL */
@@ -43,7 +43,7 @@ footer{background: #282828; text-align: center; color: #fff; padding-top: 15px; 
 /* LANGUAGE */
 .language{transform: rotate(90deg); position: absolute; right: -50px;}
 .language a{font-family: 'poppins'; font-weight: 900; color: #282828; text-decoration: none;}
-
+/*adecuacion texto*/
 /* HELP ME */
 /*.hola-bg{background: url(../images/assets/Blancoynegro_cindy.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}*/
 .yosoy-bg{background: url(../images/assets/bg-yosoy.jpg); background-repeat: no-repeat; background-size: cover; background-position: left center; background-attachment: fixed;}
