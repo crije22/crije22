@@ -64,6 +64,8 @@ header label, header input{display: none;}
 
     header{padding: 0; left: 0; width: 100%; height: 45px;background: rgba(255,255,255,.5);}
     header .flex {display: inherit; height: inherit;}
+    #2{margin-bottom: 52%;}
+    #5{{margin-bottom:90%;}
     header .flex-container {display: flex;justify-content: center;align-items: center;margin: inherit;float: right;height: 45px;}
     .social{display: contents;}
     .social li{display: inline !important;}
